@@ -12,7 +12,7 @@ class ActivityEstadisticas : AppCompatActivity() {
     var eGanaron:TextView? = null
     var ePerdieron:TextView? = null
     var ePuedeRecuperar:TextView? = null
-    var eCalculos:CalculosEstudiantes? = null
+    var eCalculos:ClassCalculosEstudiantes? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +34,7 @@ class ActivityEstadisticas : AppCompatActivity() {
     }
 
     private fun Estadisticas() {
-        eCalculos = CalculosEstudiantes()
+        eCalculos = ClassCalculosEstudiantes()
         eProcesados = findViewById(R.id.editProcesados)
         eGanaron = findViewById(R.id.editGanaron)
         ePerdieron = findViewById(R.id.editPerdieron)

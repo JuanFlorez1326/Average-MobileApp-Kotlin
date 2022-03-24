@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import org.w3c.dom.Text
 
 class ActivityVerDatos : AppCompatActivity() {
 
@@ -26,7 +25,7 @@ class ActivityVerDatos : AppCompatActivity() {
     var promedioEs:TextView? = null
     var ganoPerdio:TextView? = null
 
-    var calculos:CalculosEstudiantes? = null
+    var calculos:ClassCalculosEstudiantes? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,7 +47,7 @@ class ActivityVerDatos : AppCompatActivity() {
     }
 
     private  fun getDatosEstudiante() {
-        calculos = CalculosEstudiantes()
+        calculos = ClassCalculosEstudiantes()
 
         nombreEs = findViewById(R.id.txtNombreEstudiante)
 

@@ -1,7 +1,6 @@
 package com.juandev.average
 
 import android.content.Intent
-import android.media.VolumeShaper
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -28,7 +27,7 @@ class ActivityRegistro : AppCompatActivity() {
     var notaE4:EditText?=null
     var notaE5:EditText?=null
 
-    var calculos:CalculosEstudiantes? = null
+    var calculos:ClassCalculosEstudiantes? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +41,7 @@ class ActivityRegistro : AppCompatActivity() {
         var btnVolverRegistro:Button = findViewById(R.id.btnVolverRegistro)
         btnVolverRegistro.setOnClickListener { OnClickVolverRegistro(1) }
     }
+
     private fun OnClickVolverRegistro(button:Int){
         when(button){
             1 -> { startActivity(Intent(this,ActivityHome::class.java)) }
@@ -49,7 +49,7 @@ class ActivityRegistro : AppCompatActivity() {
     }
 
     private fun getDatosEstudiante(){
-        calculos = CalculosEstudiantes()
+        calculos = ClassCalculosEstudiantes()
 
         documentoE = findViewById(R.id.iptDocumento)
         nombreE = findViewById(R.id.iptNombre)

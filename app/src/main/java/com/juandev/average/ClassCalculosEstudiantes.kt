@@ -1,6 +1,6 @@
 package com.juandev.average
 
-class CalculosEstudiantes {
+class ClassCalculosEstudiantes {
     companion object { var Estudiantes = arrayListOf<ClassDatosEstudiante>() }
 
     fun registrarEstudiantes( cdece:ClassDatosEstudiante ){ Estudiantes.add(cdece) }
