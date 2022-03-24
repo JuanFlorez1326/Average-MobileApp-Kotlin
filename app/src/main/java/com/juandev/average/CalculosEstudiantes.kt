@@ -28,10 +28,12 @@ class CalculosEstudiantes {
                 valorNotas(cdece.nota5) === true)
 
     }
+
     fun contadorEstados(estadoE:String):Int {
         var contadorE:Int = 0
         for (i in Estudiantes){ if(i.estadoEstudiante == estadoE){ contadorE++ } }
         return  contadorE
     }
+
     fun todosEstudiantes():Int{ return Estudiantes.count() }
 }

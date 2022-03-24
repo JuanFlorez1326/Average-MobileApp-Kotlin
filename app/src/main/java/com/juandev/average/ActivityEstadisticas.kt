@@ -21,10 +21,12 @@ class ActivityEstadisticas : AppCompatActivity() {
         Volver()
         Estadisticas()
     }
+
     private fun Volver(){
         var btnEstadisticas: Button = findViewById(R.id.btnVolverEstadisticas)
         btnEstadisticas.setOnClickListener{ OnClick(1) }
     }
+
     private fun OnClick(button:Int){
         when(button){
             1 -> { startActivity(Intent(this,MainActivity::class.java)) }

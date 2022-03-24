@@ -17,6 +17,7 @@ class ActivityAyuda : AppCompatActivity() {
         var btnHelp:Button = findViewById(R.id.btnVolverAyuda)
         btnHelp.setOnClickListener{ OnClick(1) }
     }
+
     private fun OnClick(button:Int){
         when(button){
             1 -> { startActivity(Intent(this,MainActivity::class.java)) }
