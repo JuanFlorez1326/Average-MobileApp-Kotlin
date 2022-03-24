@@ -20,30 +20,29 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <TextView
         android:id="@+id/txtMessageHelp"
-        android:layout_width="317dp"
-        android:layout_height="233dp"
-        android:text="Esta aplicacion movil permite llevar un registro de estudiantes y el estado de estos en cuanto a las notas obtenidas en cada materia, cada estudiante ve 5 materias por periodo, esta aplicacion tambien cuenta con la opcion de poder ver las estadisticas de los estudiantes que han sido procesados. "
+        android:layout_width="325dp"
+        android:layout_height="268dp"
+        android:text="Esta aplicacion movil permite llevar un registro de estudiantes y el estado de estos en cuanto a las notas obtenidas en cada materia, cada estudiante ve 5 materias por periodo, esta aplicacion tambien cuenta con la opcion de poder ver las estadisticas de los estudiantes que han sido procesados., tenga en cuenta que las notas a ingresar deben ser de 1 a 5."
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.267" />
+        app:layout_constraintVertical_bias="0.28" />
 
     <Button
         android:id="@+id/btnVolverAyuda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="36dp"
         android:text="VOLVER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
