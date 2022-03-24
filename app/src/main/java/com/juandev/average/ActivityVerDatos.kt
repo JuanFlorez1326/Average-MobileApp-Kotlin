@@ -43,7 +43,7 @@ class ActivityVerDatos : AppCompatActivity() {
 
     private fun OnClickVerDatos(button: Int){
         when(button){
-            1 -> { startActivity(Intent(this,MainActivity::class.java)) }
+            1 -> { startActivity(Intent(this,ActivityRegistro::class.java)) }
         }
     }
 
