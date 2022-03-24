@@ -51,6 +51,7 @@
         android:layout_height="40dp"
         android:fontFamily="sans-serif"
         android:text="BIENVENIDO"
+        android:textColor="@color/teal_700"
         android:textAlignment="center"
         android:textSize="24sp"
         android:typeface="normal"
