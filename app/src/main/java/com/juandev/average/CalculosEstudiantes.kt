@@ -12,7 +12,7 @@ class CalculosEstudiantes {
 
     fun ganoPerdioMateria(cdece: ClassDatosEstudiante): String {
         var estadoEstudiante = ""
-        if(cdece.promedio > 3.5) { estadoEstudiante = " Gano el periodo " }
+        if(cdece.promedio > 3.5) { estadoEstudiante = "Gano el periodo" }
         else if(cdece.promedio > 2.5) { estadoEstudiante = "Puede recuperar el periodo" }
         else { estadoEstudiante = "No puede recuperar el periodo" }
         return estadoEstudiante
@@ -33,4 +33,5 @@ class CalculosEstudiantes {
         for (i in Estudiantes){ if(i.estadoEstudiante == estadoE){ contadorE++ } }
         return  contadorE
     }
+    fun todosEstudiantes():Int{ return Estudiantes.count() }
 }

@@ -19,7 +19,7 @@ class ActivityAyuda : AppCompatActivity() {
     }
     private fun OnClick(button:Int){
         when(button){
-            1 -> { startActivity(Intent(this,ActivityRegistro::class.java)) }
+            1 -> { startActivity(Intent(this,MainActivity::class.java)) }
         }
     }
 }

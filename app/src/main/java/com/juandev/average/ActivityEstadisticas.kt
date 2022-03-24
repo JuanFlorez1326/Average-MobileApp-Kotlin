@@ -4,22 +4,48 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 
 class ActivityEstadisticas : AppCompatActivity() {
+
+    var eProcesados:TextView? = null
+    var eGanaron:TextView? = null
+    var ePerdieron:TextView? = null
+    var ePuedeRecuperar:TextView? = null
+    var eCalculos:CalculosEstudiantes? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_estadisticas)
 
-        Estatisticas()
+        Volver()
+        Estadisticas()
     }
-
-    private fun Estatisticas(){
+    private fun Volver(){
         var btnEstadisticas: Button = findViewById(R.id.btnVolverEstadisticas)
         btnEstadisticas.setOnClickListener{ OnClick(1) }
     }
     private fun OnClick(button:Int){
         when(button){
-            1 -> { startActivity(Intent(this,ActivityRegistro::class.java)) }
+            1 -> { startActivity(Intent(this,MainActivity::class.java)) }
         }
+    }
+
+    private fun Estadisticas() {
+        eCalculos = CalculosEstudiantes()
+        eProcesados = findViewById(R.id.editProcesados)
+        eGanaron = findViewById(R.id.editGanaron)
+        ePerdieron = findViewById(R.id.editPerdieron)
+        ePuedeRecuperar = findViewById(R.id.editRecuperar)
+
+        DatosEstadisticas()
+    }
+
+    private fun DatosEstadisticas(){
+        eProcesados!!.text = eCalculos!!.todosEstudiantes().toString()
+        eGanaron!!.text = eCalculos!!.contadorEstados("Gano el periodo").toString()
+        var todosPerdieron=eCalculos!!.contadorEstados("No puede recuperar el periodo")+eCalculos!!.contadorEstados("Puede recuperar el periodo")
+        ePerdieron!!.text = todosPerdieron.toString()
+        ePuedeRecuperar!!.text = eCalculos!!.contadorEstados("Puede recuperar el periodo").toString()
     }
 }
