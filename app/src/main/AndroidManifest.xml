@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Average">
         <activity
+            android:name=".ActivityHome"
+            android:exported="false" />
+        <activity
             android:name=".ActivityVerDatos"
             android:exported="false" />
         <activity

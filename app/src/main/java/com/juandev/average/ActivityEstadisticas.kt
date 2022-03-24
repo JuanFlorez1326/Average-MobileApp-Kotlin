@@ -29,7 +29,7 @@ class ActivityEstadisticas : AppCompatActivity() {
 
     private fun OnClick(button:Int){
         when(button){
-            1 -> { startActivity(Intent(this,MainActivity::class.java)) }
+            1 -> { startActivity(Intent(this,ActivityHome::class.java)) }
         }
     }
 
