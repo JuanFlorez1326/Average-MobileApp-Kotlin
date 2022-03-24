@@ -35,6 +35,17 @@ class ActivityRegistro : AppCompatActivity() {
         setContentView(R.layout.activity_registro)
 
         getDatosEstudiante()
+        VolverRegistro()
+    }
+
+    private fun VolverRegistro(){
+        var btnVolverRegistro:Button = findViewById(R.id.btnVolverRegistro)
+        btnVolverRegistro.setOnClickListener { OnClickVolverRegistro(1) }
+    }
+    private fun OnClickVolverRegistro(button:Int){
+        when(button){
+            1 -> { startActivity(Intent(this,MainActivity::class.java)) }
+        }
     }
 
     private fun getDatosEstudiante(){
