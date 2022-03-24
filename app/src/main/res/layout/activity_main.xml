@@ -10,40 +10,42 @@
         android:id="@+id/btnRegistro"
         android:layout_width="110dp"
         android:layout_height="45dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="16dp"
         android:text="Registro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnEstadisticas"
-        android:layout_width="145dp"
+        android:layout_width="250dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="80dp"
         android:text="Estadisticas"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnAyuda"
-        app:layout_constraintStart_toEndOf="@+id/btnRegistro" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnAyuda"
         android:layout_width="110dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="16dp"
         android:text="Ayuda"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imgAndroid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_width="323dp"
+        android:layout_height="466dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@+id/btnEstadisticas"
-        app:srcCompat="@drawable/androidroot"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/homefondo"/>
 
     <TextView
         android:id="@+id/txtTitulo"
@@ -51,9 +53,10 @@
         android:layout_height="40dp"
         android:fontFamily="sans-serif"
         android:text="BIENVENIDO"
-        android:textColor="@color/teal_700"
         android:textAlignment="center"
+        android:textColor="@color/teal_700"
         android:textSize="24sp"
+        android:textStyle="bold"
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/imgAndroid"
         app:layout_constraintEnd_toEndOf="parent"

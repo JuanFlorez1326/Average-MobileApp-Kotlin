@@ -33,6 +33,18 @@ class ActivityVerDatos : AppCompatActivity() {
         setContentView(R.layout.activity_ver_datos)
 
         getDatosEstudiante()
+        VolverVerDatos()
+    }
+
+    private fun VolverVerDatos(){
+        var btnVolverDatos:Button = findViewById(R.id.btnVolver)
+        btnVolverDatos.setOnClickListener { OnClickVerDatos(1) }
+    }
+
+    private fun OnClickVerDatos(button: Int){
+        when(button){
+            1 -> { startActivity(Intent(this,MainActivity::class.java)) }
+        }
     }
 
     private  fun getDatosEstudiante() {

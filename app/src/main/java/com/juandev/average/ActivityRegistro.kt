@@ -115,7 +115,7 @@ class ActivityRegistro : AppCompatActivity() {
         bundle.putDouble("nota5",cdere.nota5)
 
         bundle.putString("ganoPerdio",cdere.estadoEstudiante)
-        bundle.putString("promedioE", cdere.promedio.toString())
+        bundle.putDouble("promedioE", cdere.promedio)
 
         intent.putExtras(bundle)
         startActivity(intent)

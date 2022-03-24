@@ -191,10 +191,10 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="Materia1"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/iptNota1"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:text="Materia1" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/txtMateria2"
