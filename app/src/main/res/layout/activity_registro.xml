@@ -45,8 +45,8 @@
 
     <EditText
         android:id="@+id/iptNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="64dp"
         android:ems="10"
@@ -219,8 +219,8 @@
 
     <EditText
         android:id="@+id/iptTelefono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="64dp"
         android:ems="10"
@@ -251,8 +251,8 @@
 
     <EditText
         android:id="@+id/iptDireccion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="112dp"
         android:ems="10"
@@ -263,8 +263,8 @@
 
     <EditText
         android:id="@+id/iptEdad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="52dp"
         android:ems="10"
