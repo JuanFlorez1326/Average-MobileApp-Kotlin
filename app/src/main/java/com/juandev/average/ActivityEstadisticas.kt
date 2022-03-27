@@ -44,7 +44,6 @@ class ActivityEstadisticas : AppCompatActivity() {
     }
 
     private fun DatosEstadisticas(){
-
         eProcesados!!.text = eCalculos!!.todosEstudiantes().toString()
         eGanaron!!.text = eCalculos!!.contadorEstados("Gano el periodo").toString()
         ePerdieron!!.text = eCalculos!!.todosPerdieron().toString()

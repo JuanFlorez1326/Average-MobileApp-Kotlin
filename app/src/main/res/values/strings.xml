@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Calculate Average</string>
+
+    <string name="stxtBienvenido">BIENVENIDO</string>
+    <string name="sbtnEstadisticas">Estadisticas</string>
+    <string name="sbtnRegistro">Registro</string>
+    <string name="sbtnAyuda">Ayuda</string>
+
+    <string name="stxtAyuda">AYUDA</string>
+    <string name="smAyuda">Esta aplicacion movil permite llevar un registro de estudiantes y el estado de estos en cuanto a las notas obtenidas en cada materia, cada estudiante ve 5 materias por periodo, esta aplicacion tambien cuenta con la opcion de poder ver las estadisticas de los estudiantes que han sido procesados., tenga en cuenta que las notas a ingresar deben ser de 1 a 5.</string>
+
+    <string name="stxtEstadisticas">ESTADISTICAS</string>
+    <string name="stxtEprocesados">Estudiantes procesados:</string>
+    <string name="stxtEganaron">Estudiantes que ganaron:</string>
+    <string name="stxtEperdieron">Estudiantes que perdieron:</string>
+    <string name="stxtEpuedenRecuperar">Estudiantes que pueden recuperar:</string>
+
+    <string name="stxtRegistro">REGISTRO</string>
+    <string name="sDestudiante">DATOS ESTUDIANTE</string>
+
+    <string name="sbtnEnviar">Enviar</string>
+    <string name="sbtnVolver">VOLVER</string>
 </resources>

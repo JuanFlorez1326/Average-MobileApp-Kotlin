@@ -23,7 +23,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ESTADISTICAS"
+        android:text="@string/stxtEstadisticas"
         android:textAlignment="center"
         android:textColor="@color/teal_700"
         android:textSize="24sp"
@@ -38,7 +38,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Estudiantes procesados:"
+        android:text="@string/stxtEprocesados"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editProcesados"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,33 +49,33 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Estudiantes que ganaron:"
+        android:text="@string/stxtEganaron"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editGanaron"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Estudiantes que perdieron:"
+        android:text="@string/stxtEperdieron"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editPerdieron"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Estudiantes que pueden recuperar:"
+        android:text="@string/stxtEpuedenRecuperar"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editRecuperar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -83,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
-        android:text="Volver"
+        android:text="@string/sbtnVolver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
